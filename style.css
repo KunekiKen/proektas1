@@ -1,0 +1,214 @@
+body {
+    max-width: 100%;
+    max-height: 100%;
+    background-image: url(fon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(7px);
+    margin: 20px;
+    height: 70px;
+    width: 97.5%;
+    border-radius: 5px;
+    border: solid 3px black;
+    right: 15px;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+.button1 {
+    margin-right: 60px;
+    margin-top: 22px;
+    border: none;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 20px;
+}
+.main1 {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    height: 600px;
+    border-radius: 5px;
+    border: solid 3px black;
+}
+.main {
+    backdrop-filter: blur(7px);
+    margin: 20px;
+    width: 40%;
+    height: 600px;
+}
+.button1:hover {
+    color: rgb(243, 133, 43);
+}
+.text {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    margin-top: 60px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+.content {
+    display: none;
+}
+.content.active {
+    display: block;
+}
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.8s forwards;
+}
+.fade-out {
+    animation: fadeOut 0.8s forwards;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeOut {
+    from { opacity: 1; transform: translateY(0); }
+    to { opacity: 0; transform: translateY(-20px); }
+}
+.button_next {
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+}
+.button_back {
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
+}
+img {
+    position: absolute;
+    top: 0px;
+    right:-800px;
+    height: 500px;
+    width: 700px;
+    border: solid 3px black;
+    border-radius: 5px;
+}
+.desktop {
+    display: block;
+}
+.mobile {
+    display: none;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    body {
+        background: url('fon.jpg') no-repeat center center fixed; /* Подставь свой путь к изображению */
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+    }    
+    .mobile-header {
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(7px);
+        border: solid 3px black;
+        border-radius: 5px;
+        color: rgb(0, 0, 0);
+        padding: 10px;
+    }
+    .hamburger {
+        background: none;
+        border: none;
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+    }
+    .mobile-menu {
+        display: none;
+        flex-direction: row;
+        padding: 10px;
+        position: absolute;
+        top: -5px;
+        right: 20px;
+    }
+    .header_button {
+        background: none;
+        padding-right: 20px;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    .header_button:hover {
+        color: rgb(255, 255, 255);
+    }
+    .mobile-menu.visible {
+        display: flex;
+    }
+    .mobile-menu button {
+        color: rgb(0, 0, 0);
+        border: none;
+        padding: 10px;
+        margin: 5px 0;
+    }
+    .mobile-content {
+        display: none;
+        padding: 20px;
+        margin-top: 15px;
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(7px);
+        border: solid 3px black;
+        border-radius: 5px;
+        height: 65vh;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .p2 {
+        font-size: 22px;
+    }
+    .button_back, .button_next {
+        align-self: center;
+        background-color: #fff;
+        background-image: none;
+        background-position: 0 90%;
+        background-repeat: repeat no-repeat;
+        background-size: 4px 3px;
+        border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+        border-style: solid;
+        border-width: 2px;
+        box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+        box-sizing: border-box;
+        color: #41403e;
+        cursor: pointer;
+        display: inline-block;
+        font-family: Neucha, sans-serif;
+        font-size: 1rem;
+        line-height: 23px;
+        outline: none;
+        padding: .75rem;
+        text-decoration: none;
+        transition: all 235ms ease-in-out;
+        border-bottom-left-radius: 15px 255px;
+        border-bottom-right-radius: 225px 15px;
+        border-top-left-radius: 255px 15px;
+        border-top-right-radius: 15px 225px;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+      }
+      
+      .button_back:hover, .button_next:hover {
+        box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+        transform: translate3d(0, 2px, 0);
+      }
+      
+      .button_back:focus, .button_next:focus {
+        box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+      }
+}

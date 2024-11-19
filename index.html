@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="desktop">
+    <div class="header">
+        <div class="capture"></div>
+        <div class="buttons">
+            <button class="button1" onclick="showContent('content1')">About Site</button>
+            <button class="button1" onclick="showContent('content2')">Summer</button>
+            <button class="button1" onclick="showContent('content3')">Autumn</button>
+            <button class="button1" onclick="showContent('content4')">Winter</button>
+            <button class="button1" onclick="showContent('content5')">Spring</button>
+            <button class="button1" onclick="cycleLanguage()" id="languageButton">🌐 Language</button>
+        </div>
+    </div>
+    <div class="main">   
+        <div id="content1" class="content active">
+            <div class="main1">
+                <h1 id="title1">About Site</h1>
+                <p id="text1" class="text">
+                    This site tells foreigners about where you can go to Lithuania at any time of the year. Here you will find recommendations for the best places for relaxation and attractions suitable for each season - whether it be summer beaches and picturesque lakes, autumn parks and festivals, winter fairs and rinks, or spring gardens and historical monuments. We have collected the most interesting routes and tips so that your journey through Lithuania becomes bright, comfortable and memorable!
+                </p>
+            </div>
+        </div> 
+        <div id="content2" class="content">
+            <div class="main1">
+                <h1 id="title2">Curonian braid</h1>
+                <p id="text2" class="text">
+                    In the summer, in Lithuania, the Curonian Spit becomes obligatory to visit the place. This unique natural reserve, located on the border of Lithuania and the Kaliningrad region, is known for its picturesque dunes and pine forests. Walking on soft sand, cycling along the coast and observing rare species of birds will be an unforgettable summer adventure. Be sure to look into the town of Nida, which is famous for cozy cafes, museum expositions and atmosphere of calm.
+                </p>
+                <button class="button_next" onclick="showContent('content6')">Next-></button>
+            </div>
+            <img src="kurshskaja-kosa1.jpg" alt="">
+        </div>
+        <div id="content6" class="content">
+            <div class="main1">
+                <h1 id="title3">Palanga beaches</h1>
+                <p id="text3" class="text">
+                    Palanga is the main resort city of Lithuania on the shores of the Baltic Sea. In summer, here you can enjoy clean beaches, warm sun and various entertainments. In addition to relaxing on the beach, you can take a walk along the famous pedestrian street Basanavichaus, visit the Palance Botanical Garden and the Tishuskassky Palace, where the amber museum is located. In the evening, look at the pier and admire the sunset over the sea.
+                </p>
+                <button class="button_next" onclick="showContent('content7')">Next-></button>
+                <button class="button_back" onclick="showContent('content2')"><-Back</button>
+            </div>
+            <img src="baltic-sea2.jpg" alt="">
+        </div>
+        <div id="content7" class="content">
+            <div class="main1">
+                <h1 id="title4">Trukai and Lake Galva</h1>
+                <p id="text4" class="text">
+                    On hot summer days, go to Truka to enjoy the beauty of nature and historical attractions. The Castle Castle, built on the island in the middle of Lake Galva, is one of the most popular tourist attractions of Lithuania. Here you can rent a boat or kayak, ride water bicycles and discover unique views of the castle and surrounding forests. This picturesque corner is great for a summer picnic and a relaxed vacation in nature.
+                </p>
+                <button class="button_back" onclick="showContent('content6')"><-Back</button>
+            </div>
+            <img src="trakai-castle3.jpg" alt="">
+        </div>
+        <div id="content3" class="content">
+            <div class="main1">
+                <h1 id="title5">Druskininkai</h1>
+                <p id="text5" class="text">
+                    In the fall, the resort city of Druskininkai becomes especially beautiful. Golden and crimson shades of leaves are reflected in numerous ponds and rivers, creating a magical atmosphere. Relax in one of the famous spa centers of the city, go through cozy parks and enjoy the calmness of the autumn forest. In Druskininkai, you can also visit a water park and wellness procedures.
+                </p>
+                <button class="button_next" onclick="showContent('content8')">Next-></button>
+            </div>
+            <img src="druskininkai10.jpg" alt="">
+        </div>
+        <div id="content8" class="content">
+            <div class="main1">
+                <h1 id="title6">National Park Auksteutia</h1>
+                <p id="text6" class="text">
+                    This national park is especially beautiful in the fall, when the trees are covered with gold and a crimson. Here you can go on foot and bicycle routes, enjoy autumn landscapes, walk along the forest paths and open clean lakes for yourself. Auksteutia offers cozy corners for picnics, where you can relax in the fresh air and admire picturesque landscapes.
+                </p>
+                <button class="button_next" onclick="showContent('content9')">Next-></button>
+                <button class="button_back" onclick="showContent('content3')"><-Back</button>
+            </div>
+            <img src="Aukshtajtia-park11.webp" alt="">
+        </div>
+        <div id="content9" class="content">
+            <div class="main1">
+                <h1 id="title7">Harvesting Feast in Kaunas</h1>
+                <p id="text7" class="text">
+                    In September, in Kaunas, a traditional harvest fee takes place, where local farmers represent their products, and you can try fresh vegetables, fruits and delicious cheeses. The holiday takes place on the central streets of the city and creates a special autumn mood. Visit Kaunas in the fall to get acquainted with local traditions, taste seasonal dishes and enjoy the rich taste of Lithuanian autumn.
+                </p>
+                <button class="button_back" onclick="showContent('content8')"><-Back</button>
+            </div>
+            <img src="Urozai12.jpg" alt="">
+        </div>
+        <div id="content4" class="content">
+            <div class="main1">
+                <h1 id="title8">Vilnius for Christmas</h1>
+                <p id="text8" class="text">
+                    In winter, a real Christmas fairy tale reigns in Vilnius. In the old city, thousands of lights are lit, and the Christmas tree on the Cathedral Square fascinates with its beauty. Take a walk along the cozy streets, visit holiday fairs, enjoy hot mulled wine and local varnishes. Vilnius in winter is an atmosphere of comfort and a holiday that will create a mood even on the most frosty days.
+                </p>
+                <button class="button_next" onclick="showContent('content10')">Next-></button>
+            </div>
+            <img src="winter-Vilnius4.jpg" alt="">
+        </div>
+        <div id="content10" class="content">
+            <div class="main1">
+                <h1 id="title9">The ski resort Laisvelas</h1>
+                <p id="text9" class="text">
+                    In Lithuania there is a small ski resort Laisvelas, which is suitable for novice skiers and lovers of winter sports. The resort is equipped with skiing and snowboarding, as well as tubing slopes for children and adults. After outdoor activities, you can warm up in cozy cafes with hot chocolate or have lunch in local restaurants offering traditional cuisine.
+                </p>
+                <button class="button_next" onclick="showContent('content11')">Next-></button>
+                <button class="button_back" onclick="showContent('content4')"><-Back</button>
+            </div>
+            <img src="liepkalnis-glavnaya5.jpg" alt="">
+        </div>
+        <div id="content11" class="content">
+            <div class="main1">
+                <h1 id="title10">Grotto and ice caves in a palang</h1>
+                <p id="text10" class="text">
+                    In the winter season, the Baltic coast near the palange turns into a real ice gallery. Local grottoes and rocks are covered with ice, forming fascinating forms. Ice caves are an unusual place that is worth seeing in winter. Take beautiful photos against the backdrop of ice sculptures, enjoy fresh sea air and silence of the winter coast.
+                </p>
+                <button class="button_back" onclick="showContent('content10')"><-Back</button>
+            </div>
+            <img src="ledianie-pesheri6.jpg" alt="">
+        </div>
+        <div id="content5" class="content">
+            <div class="main1">
+                <h1 id="title11">Vilnius gardens</h1>
+                <p id="text11" class="text">
+                    In spring, the old town of Vilnius and its gardens bloom, turning into an amazing sight. A walk through the Bernardine Garden or the Vingis Park will fill you with bright colors and scents of flowers. In April-May, Vilnius Gardens become a popular place for citizens and tourists to relax, where you can admire spring flowers, sit by the ponds and just enjoy nature.
+                </p>
+                <button class="button_next" onclick="showContent('content12')">Next-></button>
+            </div>
+            <img src="botanikos-sodas7.jpg" alt="">
+        </div>
+        <div id="content12" class="content">
+            <div class="main1">
+                <h1 id="title12">Hill of Crosses in Šiauliai</h1>
+                <p id="text12" class="text">
+                    The Hill of Crosses is one of the most amazing and iconic places in Lithuania, and in spring, when nature comes to life, it is especially beautiful here. This unique place with thousands of crosses of different sizes and shapes has a deep cultural and spiritual meaning for Lithuanians. Visit it in spring, when the peace and quiet of this place is especially felt, and feel the grandeur and history of Lithuania.
+                </p>
+                <button class="button_next" onclick="showContent('content13')">Next-></button>
+                <button class="button_back" onclick="showContent('content5')"><-Back</button>
+            </div>
+            <img src="kryziu_kalnas8.jpg" alt="">
+        </div>
+        <div id="content13" class="content">
+            <div class="main1">
+                <h1 id="title13">Klaipėda and boat trips</h1>
+                <p id="text13" class="text">
+                    In spring, Klaipėda comes to life, and sightseeing boats and boats start sailing here again. Stroll through the historic streets of Klaipėda, visit the old port and go on a boat trip. The spring air here is filled with sea freshness and warmth, and the atmosphere of the city creates a pleasant mood for leisurely walks and acquaintance with its sights.
+                </p>
+                <button class="button_back" onclick="showContent('content12')"><-Back</button>
+            </div>
+            <img src="klaipeda9.jpg" alt="">
+        </div>
+    </div>
+    <script>
+        const translations = {
+            en: {
+                title1: "About Site",
+                text1: "This site tells foreigners about where you can go to Lithuania at any time of the year. Here you will find recommendations for the best places for relaxation and attractions suitable for each season - whether it be summer beaches and picturesque lakes, autumn parks and festivals, winter fairs and rinks, or spring gardens and historical monuments. We have collected the most interesting routes and tips so that your journey through Lithuania becomes bright, comfortable and memorable!",
+                title2: "Curonian braid",
+                text2: "In the summer, in Lithuania, the Curonian Spit becomes obligatory to visit the place. This unique natural reserve, located on the border of Lithuania and the Kaliningrad region, is known for its picturesque dunes and pine forests. Walking on soft sand, cycling along the coast and observing rare species of birds will be an unforgettable summer adventure. Be sure to look into the town of Nida, which is famous for cozy cafes, museum expositions and atmosphere of calm.",
+                title3: "Palanga beaches",
+                text3: "Palanga is the main resort city of Lithuania on the shores of the Baltic Sea. In summer, here you can enjoy clean beaches, warm sun and various entertainments. In addition to relaxing on the beach, you can take a walk along the famous pedestrian street Basanavichaus, visit the Palance Botanical Garden and the Tishuskassky Palace, where the amber museum is located. In the evening, look at the pier and admire the sunset over the sea.",
+                title4:"Trukai and Lake Galva",
+                text4:"On hot summer days, go to Truka to enjoy the beauty of nature and historical attractions. The Castle Castle, built on the island in the middle of Lake Galva, is one of the most popular tourist attractions of Lithuania. Here you can rent a boat or kayak, ride water bicycles and discover unique views of the castle and surrounding forests. This picturesque corner is great for a summer picnic and a relaxed vacation in nature.",
+                title5:"Druskininkai",
+                text5:"In the fall, the resort city of Druskininkai becomes especially beautiful. Golden and crimson shades of leaves are reflected in numerous ponds and rivers, creating a magical atmosphere. Relax in one of the famous spa centers of the city, go through cozy parks and enjoy the calmness of the autumn forest. In Druskininkai, you can also visit a water park and wellness procedures.",
+                title6:"National Park Auksteutia",
+                text6:"This national park is especially beautiful in the fall, when the trees are covered with gold and a crimson. Here you can go on foot and bicycle routes, enjoy autumn landscapes, walk along the forest paths and open clean lakes for yourself. Auksteutia offers cozy corners for picnics, where you can relax in the fresh air and admire picturesque landscapes.",
+                title7:"Harvesting Feast in Kaunas",
+                text7:"In September, in Kaunas, a traditional harvest fee takes place, where local farmers represent their products, and you can try fresh vegetables, fruits and delicious cheeses. The holiday takes place on the central streets of the city and creates a special autumn mood. Visit Kaunas in the fall to get acquainted with local traditions, taste seasonal dishes and enjoy the rich taste of Lithuanian autumn.",
+                title8:"Vilnius for Christmas",
+                text8:"In winter, a real Christmas fairy tale reigns in Vilnius. In the old city, thousands of lights are lit, and the Christmas tree on the Cathedral Square fascinates with its beauty. Take a walk along the cozy streets, visit holiday fairs, enjoy hot mulled wine and local varnishes. Vilnius in winter is an atmosphere of comfort and a holiday that will create a mood even on the most frosty days.",
+                title9:"The ski resort Laisvelas",
+                text9:"In Lithuania there is a small ski resort Laisvelas, which is suitable for novice skiers and lovers of winter sports. The resort is equipped with skiing and snowboarding, as well as tubing slopes for children and adults. After outdoor activities, you can warm up in cozy cafes with hot chocolate or have lunch in local restaurants offering traditional cuisine.",
+                title10:"Grotto and ice caves in a palang",
+                text10:"In the winter season, the Baltic coast near the palange turns into a real ice gallery. Local grottoes and rocks are covered with ice, forming fascinating forms. Ice caves are an unusual place that is worth seeing in winter. Take beautiful photos against the backdrop of ice sculptures, enjoy fresh sea air and silence of the winter coast.",
+                title11:"Vilnius gardens",
+                text11:"In spring, the old town of Vilnius and its gardens bloom, turning into an amazing sight. A walk through the Bernardine Garden or the Vingis Park will fill you with bright colors and scents of flowers. In April-May, Vilnius Gardens become a popular place for citizens and tourists to relax, where you can admire spring flowers, sit by the ponds and just enjoy nature.",
+                title12:"Hill of Crosses in Šiauliai",
+                text12:"The Hill of Crosses is one of the most amazing and iconic places in Lithuania, and in spring, when nature comes to life, it is especially beautiful here. This unique place with thousands of crosses of different sizes and shapes has a deep cultural and spiritual meaning for Lithuanians. Visit it in spring, when the peace and quiet of this place is especially felt, and feel the grandeur and history of Lithuania.",
+                title13:"Klaipėda and boat trips",
+                text13:"In spring, Klaipėda comes to life, and sightseeing boats and boats start sailing here again. Stroll through the historic streets of Klaipėda, visit the old port and go on a boat trip. The spring air here is filled with sea freshness and warmth, and the atmosphere of the city creates a pleasant mood for leisurely walks and acquaintance with its sights.",
+            },
+            ru: {
+                title1: "О сайте",
+                text1: "Этот сайт рассказывает иностранцам о том, куда можно отправиться в Литве в любое время года. Здесь вы найдете рекомендации по лучшим местам для отдыха и достопримечательностям, подходящим для каждого сезона — будь то летние пляжи и живописные озера, осенние парки и фестивали, зимние ярмарки и катки, или весенние сады и исторические памятники. Мы собрали самые интересные маршруты и советы, чтобы ваше путешествие по Литве стало ярким, комфортным и запоминающимся!",
+                title2: "Куршская коса",
+                text2: "Летом в Литве обязательным к посещению местом становится Куршская коса. Этот уникальный природный заповедник, находящийся на границе Литвы и Калининградской области, известен своими живописными дюнами и сосновыми лесами. Прогулка по мягкому песку, катание на велосипеде вдоль побережья и наблюдение за редкими видами птиц станут незабываемым летним приключением. Обязательно загляните в городок Нида, который славится уютными кафе, музейными экспозициями и атмосферой спокойствия.",
+                title3: "Пляжи Паланги",
+                text3: "Паланга — это главный курортный город Литвы на берегу Балтийского моря. Летом здесь можно наслаждаться чистыми пляжами, теплым солнцем и разнообразными развлечениями. Кроме отдыха на пляже, вы можете прогуляться по знаменитой пешеходной улице Басанавичяус, посетить Паланский ботанический сад и Тишкаускасский дворец, где размещен музей янтаря. Вечером загляните на пирс и полюбуйтесь закатом над морем.",
+                title4:"Тракай и озеро Гальве",
+                text4:"В жаркие летние дни отправляйтесь в Тракай, чтобы насладиться красотой природы и историческими достопримечательностями. Замок Тракай, построенный на острове посреди озера Гальве, — одна из самых популярных туристических достопримечательностей Литвы. Здесь можно арендовать лодку или каяк, покататься на водных велосипедах и открыть для себя неповторимые виды на замок и окружающие леса. Этот живописный уголок отлично подходит для летнего пикника и спокойного отдыха на природе.",
+                title5:"Друскининкай",
+                text5:"Осенью курортный город Друскининкай становится особенно красивым. Золотые и багряные оттенки листьев отражаются в многочисленных прудах и реках, создавая волшебную атмосферу. Отдохните в одном из знаменитых спа-центров города, пройдитесь по уютным паркам и насладитесь спокойствием осеннего леса. В Друскининкае также можно посетить аквапарк и оздоровительные процедуры.",
+                title6:"Национальный парк Аукштайтия",
+                text6:"Этот национальный парк особенно прекрасен осенью, когда деревья покрываются золотом и багрянцем. Здесь можно отправиться на пешие и велосипедные маршруты, насладиться осенними пейзажами, пройтись по лесным тропинкам и открыть для себя чистые озера. Аукштайтия предлагает уютные уголки для пикников, где можно отдохнуть на свежем воздухе и полюбоваться живописными пейзажами.",
+                title7:"Праздник сбора урожая в Каунасе",
+                text7:"В сентябре в Каунасе проходит традиционный праздник сбора урожая, где местные фермеры представляют свои продукты, и можно попробовать свежие овощи, фрукты и вкуснейшие сыры. Праздник проходит на центральных улицах города и создает особое осеннее настроение. Посетите Каунас осенью, чтобы познакомиться с местными традициями, отведать сезонные блюда и насладиться богатым вкусом литовской осени.",
+                title8:"Вильнюс на Рождество",
+                text8:"Зимой в Вильнюсе царит настоящая рождественская сказка. В старом городе зажигаются тысячи огней, а рождественская елка на Кафедральной площади завораживает своей красотой. Прогуляйтесь по уютным улочкам, посетите праздничные ярмарки, насладитесь горячим глинтвейном и местными лакомствами. Вильнюс зимой — это атмосфера уюта и праздника, которая создаст настроение даже в самые морозные дни.",
+                title9:"Горнолыжный курорт Лайсвелас",
+                text9:"В Литве есть небольшой горнолыжный курорт Лайсвелас, который подойдет для начинающих лыжников и любителей зимних видов спорта. На курорте оборудованы трассы для катания на лыжах и сноуборде, а также тюбинговые склоны для детей и взрослых. После активного отдыха можно согреться в уютных кафе с горячим шоколадом или пообедать в местных ресторанах, предлагающих традиционную кухню.",
+                title10:"Гроты и ледяные пещеры в Паланге",
+                text10:"В зимний сезон побережье Балтики возле Паланги превращается в настоящую ледяную галерею. Местные гроты и скалы покрываются льдом, образуя завораживающие формы. Ледяные пещеры — необычное место, которое стоит увидеть зимой. Сделайте красивые фотографии на фоне ледяных скульптур, насладитесь свежим морским воздухом и тишиной зимнего побережья.",
+                title11:"Сады Вильнюса",
+                text11:"Весной старый город Вильнюса и его сады расцветают, превращаясь в удивительное зрелище. Прогулка по Бернардинскому саду или по парку Вингис наполнит вас яркими красками и ароматами цветов. В апреле-мае Вильнюсские сады становятся популярным местом для отдыха горожан и туристов, где можно полюбоваться весенними цветами, посидеть у прудов и просто насладиться природой.",
+                title12:"Гора крестов в Шяуляе",
+                text12:"Гора крестов — это одно из самых удивительных и знаковых мест в Литве, а весной, когда природа оживает, здесь особенно красиво. Это уникальное место с тысячами крестов разных размеров и форм имеет глубокий культурный и духовный смысл для литовцев. Посетите его весной, когда тишина и покой этого места особенно чувствуются, и почувствуйте величие и историю Литвы.",
+                title13:"Клайпеда и морские прогулки",
+                text13:"Весной Клайпеда оживает, и здесь снова начинают ходить экскурсионные корабли и лодки. Прогуляйтесь по историческим улочкам Клайпеды, посетите старый порт и отправьтесь на морскую прогулку. Весенний воздух здесь наполнен морской свежестью и теплом, а атмосфера города создает приятное настроение для неспешных прогулок и знакомства с его достопримечательностями.",
+            },
+            lt: {
+                title1: "Apie Svetainę",
+                text1: "Ši svetainė užsieniečiams pasakoja apie tai, kur galite vykti į Lietuvą bet kuriuo metų laiku. Čia rasite rekomendacijas dėl geriausių kiekvieno sezono atsipalaidavimo ir pramogų vietų - nesvarbu, ar tai būtų vasaros paplūdimiai ir vaizdingi ežerai, rudens parkai ir festivaliai, žiemos mugės ir aikštės, ar pavasariniai sodai ir istoriniai paminklai. Mes surinkome įdomiausius maršrutus ir patarimus, kad jūsų kelionė per Lietuvą taptų šviesi, patogi ir įsimintina!",
+                title2: "Curonian pynė",
+                text2: "Vasarą, Lietuvoje, Curonian nerija tampa privaloma aplankyti vietą. Šis unikalus gamtos rezervatas, esantis Lietuvos ir Kaliningrado regiono pasienyje, yra žinomas dėl savo vaizdingų kopų ir pušies miškų. Vaikščiojimas ant minkšto smėlio, važiavimas dviračiu pakrantėje ir stebint retas paukščių rūšis bus nepamirštamas vasaros nuotykis. Pažvelkite į Nidos miestą, garsėjantį jaukiomis kavinėmis, muziejaus ekspozicijomis ir ramybės atmosfera.",
+                title3: "Palangos paplūdimiai",
+                text3: "Palanga yra pagrindinis Lietuvos kurortinis miestas Lietuvoje ant Baltijos jūros krantų. Vasarą čia galite mėgautis švariais paplūdimiais, šilta saule ir įvairiomis pramogomis. Be atsipalaidavimo paplūdimyje, galite pasivaikščioti garsiuoju pėsčiųjų gatvės Basanavichausu, apsilankyti „Paliance Botanical Garden“ ir Tishuskasksky rūmuose, kur yra Gintaro muziejus. Vakare pažiūrėkite į prieplauką ir pasigrožėkite saulėlydžiu virš jūros.",
+                title4:"Trukai ir Galvos ežeras",
+                text4:"Karštomis vasaros dienomis eikite į Truką ir mėgaukitės gamtos ir istorinių lankytinų vietų grožiu. Pilies pilis, pastatyta saloje Galvos ežero viduryje, yra vienas populiariausių Lietuvos lankytinų vietų. Čia galite išsinuomoti valtį ar baidarę, važiuoti vandens dviračiais ir atrasti unikalius pilies ir aplinkinių miškų vaizdus. Šis vaizdingas kampelis puikiai tinka vasaros piknikui ir ramioms atostogoms gamtoje.",
+                title5:"Druskininkai",
+                text5:"Rudenį kurortinis Druskininkai miestas tampa ypač gražus. Auksiniai ir raudoni lapų atspalviai atsispindi daugelyje tvenkinių ir upių, sukuriant stebuklingą atmosferą. Atsipalaiduokite viename iš garsiųjų SPA centrų miesto, eikite per jaukius parkus ir mėgaukitės Rudens miško ramybe. Druskininkai taip pat galite apsilankyti vandens parko ir sveikatingumo procedūrose.",
+                title6:"Nacionalinio parko Auksteutia",
+                text6:"Šis nacionalinis parkas yra ypač gražus rudenį, kai medžiai yra padengti auksu ir raudona spalva. Čia galite eiti pėsčiomis ir dviračių maršrutais, pasimėgauti rudens peizažais, vaikščioti miško takais ir atidaryti švarius ežerus sau. „Auksteutia“ siūlo jaukius piknikų kampus, kur galite atsipalaiduoti gryname ore ir grožėtis vaizdingais kraštovaizdžiais.",
+                title7:"Derliaus nuėmimo šventė Kaunuose",
+                text7:"Rugsėjį, Kaunas, vyksta tradicinis derliaus nuėmimo mokestis, kai vietiniai ūkininkai atstovauja savo produktams, ir jūs galite išbandyti šviežias daržoves, vaisius ir skanius sūrius. Atostogos vyksta centrinėse miesto gatvėse ir sukuria ypatingą rudens nuotaiką. Rudenį apsilankykite „Kaunas“ ir susipažinkite su vietos tradicijomis, skonio sezoninius patiekalus ir mėgaukitės turtingu Lietuvos rudens skoniu.",
+                title8:"Vilnius Kalėdoms",
+                text8:"Žiemą Vilnius karaliauja tikra kalėdinė pasaka. Senamiestyje tūkstančiai žibintų užsidega, o Kalėdų eglutė Katedros aikštėje žavi savo grožiu. Pasivaikščiokite jaukiomis gatvėmis, apsilankykite atostogų mugėse, mėgaukitės karštu kuojos vyno ir vietiniais lakais. Vilnius žiemą yra komforto atmosfera ir atostogos, kurios sukurs nuotaiką net ir šalčiausiomis dienomis.",
+                title9:"Slidinėjimo kurortas laisvelas",
+                text9:"Lietuvoje yra nedidelis slidinėjimo kurortas „Laisvelas“, kuris tinka pradedantiesiems slidininkams ir žiemos sporto mėgėjams. Kurorte yra slidinėjimas ir snieglenčių sportas, taip pat vamzdžių šlaitai vaikams ir suaugusiems. Po užsiėmimų lauke galite sušilti jaukiose kavinėse su karštu šokoladu arba papietauti vietiniuose restoranuose, siūlančiuose tradicinę virtuvę.",
+                title10:"Grotto ir ledo urvai Palange",
+                text10:"In the winter season, the Baltic coast near the palange turns into a real ice gallery. Local grottoes and rocks are covered with ice, forming fascinating forms. Ice caves are an unusual place that is worth seeing in winter. Take beautiful photos against the backdrop of ice sculptures, enjoy fresh sea air and silence of the winter coast.",
+                title11:"Vilniaus sodai",
+                text11:"Pavasarį pražysta Vilniaus senamiestis ir jo sodai, virstantys nuostabiu reginiu. Pasivaikščiojimas po Bernardinų sodą ar Vingio parką užpildys jus ryškiomis spalvomis ir gėlių kvapais. Balandį-gegužę Vilniaus sodai tampa populiaria vieta miestiečių ir turistų poilsiui, kur galima grožėtis pavasarinėmis gėlėmis, pasėdėti prie tvenkinių ir tiesiog pasimėgauti gamta.",
+                title12:"Kryžių kalnas Šiauliuose",
+                text12:"Kryžių kalnas yra viena nuostabiausių ir ikoniškiausių vietų Lietuvoje, o pavasarį, kai gamta atgyja, čia ypač gražu. Ši unikali vieta su tūkstančiais įvairaus dydžio ir formų kryžių lietuviams turi gilią kultūrinę ir dvasinę prasmę. Aplankykite ją pavasarį, kai ypač jaučiama šios vietos ramybė ir ramybė, pajuskite Lietuvos didybę ir istoriją.",
+                title13:"Klaipėda ir kelionės laivu",
+                text13:"Pavasarį Klaipėda atgyja, čia vėl pradeda plaukioti pažintiniai laivai ir valtys. Pasivaikščiokite istorinėmis Klaipėdos gatvėmis, aplankykite senąjį uostą ir leiskitės į kelionę laivu. Pavasario oras čia alsuoja jūros gaiva ir šiluma, o miesto atmosfera sukuria malonią nuotaiką ramiems pasivaikščiojimams ir pažinimui su savo lankytinomis vietomis.",
+            }
+        };
+
+        const languageOrder = ['en', 'ru', 'lt'];
+        let currentLanguageIndex = 0;
+
+        function cycleLanguage() {
+            currentLanguageIndex = (currentLanguageIndex + 1) % languageOrder.length;
+            const selectedLanguage = languageOrder[currentLanguageIndex];
+            
+            document.getElementById('title1').innerText = translations[selectedLanguage].title1;
+            document.getElementById('text1').innerText = translations[selectedLanguage].text1;
+            document.getElementById('title2').innerText = translations[selectedLanguage].title2;
+            document.getElementById('text2').innerText = translations[selectedLanguage].text2;
+            document.getElementById('title3').innerText = translations[selectedLanguage].title3;
+            document.getElementById('text3').innerText = translations[selectedLanguage].text3;
+            document.getElementById('title4').innerText = translations[selectedLanguage].title4;
+            document.getElementById('text4').innerText = translations[selectedLanguage].text4;
+            document.getElementById('title5').innerText = translations[selectedLanguage].title5;
+            document.getElementById('text5').innerText = translations[selectedLanguage].text5;
+            document.getElementById('title6').innerText = translations[selectedLanguage].title6;
+            document.getElementById('text6').innerText = translations[selectedLanguage].text6;
+            document.getElementById('title7').innerText = translations[selectedLanguage].title7;
+            document.getElementById('text7').innerText = translations[selectedLanguage].text7;
+            document.getElementById('title8').innerText = translations[selectedLanguage].title8;
+            document.getElementById('text8').innerText = translations[selectedLanguage].text8;
+            document.getElementById('title9').innerText = translations[selectedLanguage].title9;
+            document.getElementById('text9').innerText = translations[selectedLanguage].text9;
+            document.getElementById('title10').innerText = translations[selectedLanguage].title10;
+            document.getElementById('text10').innerText = translations[selectedLanguage].text10;
+            document.getElementById('title11').innerText = translations[selectedLanguage].title11;
+            document.getElementById('text11').innerText = translations[selectedLanguage].text11;
+            document.getElementById('title12').innerText = translations[selectedLanguage].title12;
+            document.getElementById('text12').innerText = translations[selectedLanguage].text12;
+            document.getElementById('title13').innerText = translations[selectedLanguage].title13;
+            document.getElementById('text13').innerText = translations[selectedLanguage].text13;
+            
+            const languageNames = { en: "English", ru: "Русский", lt: "Lietuvių" };
+            document.getElementById('languageButton').innerText = `🌐 ${languageNames[selectedLanguage]}`;
+        }
+
+        function showContent(contentId) {
+            const contents = document.querySelectorAll('.content');
+            contents.forEach(content => {
+                if (content.id === contentId) {
+                    content.classList.add('active', 'fade-in');
+                    content.classList.remove('fade-out');
+                } else {
+                    content.classList.add('fade-out');
+                    content.classList.remove('active', 'fade-in');
+                }
+            });
+        }
+    </script>
+</div>  
+    <div class="mobile">
+        <header class="mobile-header">
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
+            <nav class="mobile-menu" id="mobileMenu">
+                <button class="header_button" onclick="showMobileContent('mobileContent1')">About Site</button>
+                <button class="header_button" onclick="showMobileContent('mobileContent2')">Summer</button>
+                <button class="header_button" onclick="showMobileContent('mobileContent5')">Autumn</button>
+                <button class="header_button" onclick="showMobileContent('mobileContent8')">Winter</button>
+                <button class="header_button" onclick="showMobileContent('mobileContent11')">Spring</button>
+            </nav>
+        </header>
+        <main>
+            <div id="mobileContent1" class="mobile-content"><p class="p2">This site tells foreigners about where you can go to Lithuania at any time of the year. Here you will find recommendations for the best places for relaxation and attractions suitable for each season - whether it be summer beaches and picturesque lakes, autumn parks and festivals, winter fairs and rinks, or spring gardens and historical monuments. We have collected the most interesting routes and tips so that your journey through Lithuania becomes bright, comfortable and memorable!</p></div>
+            <div id="mobileContent2" class="mobile-content">
+                <h2>Curonian braid</h2>
+                <p class="p2">In the summer, in Lithuania, the Curonian Spit becomes obligatory to visit the place. This unique natural reserve, located on the border of Lithuania and the Kaliningrad region, is known for its picturesque dunes and pine forests. Walking on soft sand, cycling along the coast and observing rare species of birds will be an unforgettable summer adventure. Be sure to look into the town of Nida, which is famous for cozy cafes, museum expositions and atmosphere of calm.</p>
+                <button class="button_next" onclick="showMobileContent('mobileContent3')">Next-></button>
+            </div>
+            <div id="mobileContent3" class="mobile-content">
+                <h2>Palanga beaches</h2>
+                <p class="p2">Palanga is the main resort city of Lithuania on the shores of the Baltic Sea. In summer, here you can enjoy clean beaches, warm sun and various entertainments. In addition to relaxing on the beach, you can take a walk along the famous pedestrian street Basanavichaus, visit the Palance Botanical Garden and the Tishuskassky Palace, where the amber museum is located. In the evening, look at the pier and admire the sunset over the sea.</p>
+                <button class="button_next" onclick="showMobileContent('mobileContent4')">Next-></button>
+                <button class="button_back" onclick="showMobileContent('mobileContent2')"><-Back</button>
+            </div>
+            <div id="mobileContent4" class="mobile-content">
+                <h2>Trukai and Lake Galva</h2>
+                <p class="p2"> On hot summer days, go to Truka to enjoy the beauty of nature and historical attractions. The Castle Castle, built on the island in the middle of Lake Galva, is one of the most popular tourist attractions of Lithuania. Here you can rent a boat or kayak, ride water bicycles and discover unique views of the castle and surrounding forests. This picturesque corner is great for a summer picnic and a relaxed vacation in nature.</p>
+                <button class="button_back" onclick="showMobileContent('mobileContent3')"><-Back</button>
+            </div>
+            <div id="mobileContent5" class="mobile-content">
+                <h2>Druskininkai</h2>
+                <p class="p2">In the fall, the resort city of Druskininkai becomes especially beautiful. Golden and crimson shades of leaves are reflected in numerous ponds and rivers, creating a magical atmosphere. Relax in one of the famous spa centers of the city, go through cozy parks and enjoy the calmness of the autumn forest. In Druskininkai, you can also visit a water park and wellness procedures.</p>
+                <button class="button_next" onclick="showMobileContent('mobileContent6')">Next-></button>
+            </div>
+            <div id="mobileContent6" class="mobile-content">
+                <h2>National Park Auksteutia</h2>
+                <p class="p2">This national park is especially beautiful in the fall, when the trees are covered with gold and a crimson. Here you can go on foot and bicycle routes, enjoy autumn landscapes, walk along the forest paths and open clean lakes for yourself. Auksteutia offers cozy corners for picnics, where you can relax in the fresh air and admire picturesque landscapes.</p>
+                <button class="button_next" onclick="showMobileContent('mobileContent7')">Next-></button>
+                <button class="button_back" onclick="showMobileContent('mobileContent5')"><-Back</button>
+            </div>
+            <div id="mobileContent7" class="mobile-content">
+                <h2>Harvesting Feast in Kaunas</h2>
+                <p class="p2"> In September, in Kaunas, a traditional harvest fee takes place, where local farmers represent their products, and you can try fresh vegetables, fruits and delicious cheeses. The holiday takes place on the central streets of the city and creates a special autumn mood. Visit Kaunas in the fall to get acquainted with local traditions, taste seasonal dishes and enjoy the rich taste of Lithuanian autumn.</p>
+                <button class="button_back" onclick="showMobileContent('mobileContent6')"><-Back</button>
+            </div>
+            <div id="mobileContent8" class="mobile-content">
+                <h2>Vilnius for Christmas</h2>
+                <p class="p2">In winter, a real Christmas fairy tale reigns in Vilnius. In the old city, thousands of lights are lit, and the Christmas tree on the Cathedral Square fascinates with its beauty. Take a walk along the cozy streets, visit holiday fairs, enjoy hot mulled wine and local varnishes. Vilnius in winter is an atmosphere of comfort and a holiday that will create a mood even on the most frosty days.</p>
+                <button class="button_next" onclick="showMobileContent('mobileContent9')">Next-></button>
+            </div>
+            <div id="mobileContent9" class="mobile-content">
+                <h2>The ski resort Laisvelas</h2>
+                <p class="p2">In Lithuania there is a small ski resort Laisvelas, which is suitable for novice skiers and lovers of winter sports. The resort is equipped with skiing and snowboarding, as well as tubing slopes for children and adults. After outdoor activities, you can warm up in cozy cafes with hot chocolate or have lunch in local restaurants offering traditional cuisine.</p>
+                <button class="button_next" onclick="showMobileContent('mobileContent10')">Next-></button>
+                <button class="button_back" onclick="showMobileContent('mobileContent8')"><-Back</button>
+            </div>
+            <div id="mobileContent10" class="mobile-content">
+                <h2>Grotto and ice caves in a palang</h2>
+                <p class="p2"> In the winter season, the Baltic coast near the palange turns into a real ice gallery. Local grottoes and rocks are covered with ice, forming fascinating forms. Ice caves are an unusual place that is worth seeing in winter. Take beautiful photos against the backdrop of ice sculptures, enjoy fresh sea air and silence of the winter coast.</p>
+                <button class="button_back" onclick="showMobileContent('mobileContent9')"><-Back</button>
+            </div>
+            <div id="mobileContent11" class="mobile-content">
+                <h2>Vilnius gardens</h2>
+                <p class="p2">In spring, the old town of Vilnius and its gardens bloom, turning into an amazing sight. A walk through the Bernardine Garden or the Vingis Park will fill you with bright colors and scents of flowers. In April-May, Vilnius Gardens become a popular place for citizens and tourists to relax, where you can admire spring flowers, sit by the ponds and just enjoy nature.</p>
+                <button class="button_next" onclick="showMobileContent('mobileContent12')">Next-></button>
+            </div>
+            <div id="mobileContent12" class="mobile-content">
+                <h2>Hill of Crosses in Šiauliai</h2>
+                <p class="p2">The Hill of Crosses is one of the most amazing and iconic places in Lithuania, and in spring, when nature comes to life, it is especially beautiful here. This unique place with thousands of crosses of different sizes and shapes has a deep cultural and spiritual meaning for Lithuanians. Visit it in spring, when the peace and quiet of this place is especially felt, and feel the grandeur and history of Lithuania.</p>
+                <button class="button_next" onclick="showMobileContent('mobileContent13')">Next-></button>
+                <button class="button_back" onclick="showMobileContent('mobileContent11')"><-Back</button>
+            </div>
+            <div id="mobileContent13" class="mobile-content">
+                <h2>Klaipėda and boat trips</h2>
+                <p class="p2"> In spring, Klaipėda comes to life, and sightseeing boats and boats start sailing here again. Stroll through the historic streets of Klaipėda, visit the old port and go on a boat trip. The spring air here is filled with sea freshness and warmth, and the atmosphere of the city creates a pleasant mood for leisurely walks and acquaintance with its sights.</p>
+                <button class="button_back" onclick="showMobileContent('mobileContent12')"><-Back</button>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('visible');
+        }
+
+        function showMobileContent(contentId) {
+            document.querySelectorAll('.mobile-content').forEach(content => {
+                content.style.display = 'none';
+            });
+            document.getElementById(contentId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
+
