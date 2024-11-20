@@ -140,8 +140,10 @@ img {
         right: 20px;
     }
     .header_button {
+        display: flex;
+        justify-content: space-between;
         background: none;
-        padding-right: 20px;
+        padding-right: 10px;
         margin-bottom: 10px;
         font-size: 15px;
     }
@@ -158,6 +160,7 @@ img {
         margin: 5px 0;
     }
     .mobile-content {
+        max-width: 100%;
         display: none;
         padding: 20px;
         margin-top: 15px;
@@ -170,9 +173,14 @@ img {
         margin-right: 15px;
     }
     .p2 {
+        padding-top: -15px;
         font-size: 22px;
+        width: 95%;
+        height: 50%;
+        position: fixed;
     }
     .button_back, .button_next {
+        position: fixed;
         align-self: center;
         background-color: #fff;
         background-image: none;
